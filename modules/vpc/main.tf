@@ -11,7 +11,7 @@ resource "aws_vpc" "new-infra" {
 }
 
 resource "aws_subnet" "subnet1" {
-    vpc_id     = aws_vpc.new-infra.id
+    vpc_id = aws_vpc.new-infra.id
     availability_zone =  var.availability_zone
     cidr_block = var.subnet1cidr_block
     map_public_ip_on_launch = var.subnet1publicip
@@ -22,7 +22,7 @@ resource "aws_subnet" "subnet1" {
 }
 
 resource "aws_subnet" "subnet2" {
-    vpc_id     = aws_vpc.new-infra.id
+    vpc_id = aws_vpc.new-infra.id
     availability_zone =  var.availability_zone2
     cidr_block = var.subnet2cidr_block
 
@@ -52,15 +52,15 @@ resource "aws_route_table" "route_table" {
 }
 
 resource "aws_route_table_association" "subnet-association" {
-  subnet_id      = aws_subnet.subnet1.id
+  subnet_id = aws_subnet.subnet1.id
   route_table_id = aws_route_table.route_table.id
 }
 
 resource "aws_vpc_endpoint" "s3" {
-  vpc_id            = aws_vpc.new-infra.id
-  service_name      = var.service_name
+  vpc_id = aws_vpc.new-infra.id
+  service_name = var.service_name
   vpc_endpoint_type = var.type
-  route_table_ids   = [aws_vpc.new-infra.main_route_table_id]
+  route_table_ids = [aws_vpc.new-infra.main_route_table_id]
 
   tags = {
     Name = "s3-endpoint"
