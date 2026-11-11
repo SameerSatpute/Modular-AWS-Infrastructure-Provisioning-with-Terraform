@@ -1,6 +1,6 @@
 module "s3" {
     source = "./modules/s3"
-    bucketname = "bababababbaa"
+    bucketname = "some.random.name"
     bucket_namespace = "global"
     object_ownership = "BucketOwnerEnforced"
     versioning = "Enabled"
