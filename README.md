@@ -14,16 +14,16 @@ A Terraform project that provisions an AWS environment from reusable modules (VP
 - Terraform state lives in a versioned, encrypted S3 bucket with native state locking.
 
 ## Project structure
-├── backend/
-│   └── s3_backend.tf        # one-time bootstrap: creates the state bucket
-├── modules/
-│   ├── vpc/                 # VPC, subnets, IGW, route table, S3 endpoint
-│   ├── security_group/      # security group, ingress and egress rules
-│   ├── iam/                 # IAM role, policy attachment, instance profile
-│   ├── ec2/                 # key pair and EC2 instances (for_each)
-│   └── s3/                  # logs bucket with encryption and lifecycle
-├── main.tf                  # root module wiring everything together
-└── provider.tf              # AWS provider and S3 backend configuration
+── backend/
+   └── s3_backend.tf        # one-time bootstrap: creates the state bucket
+── modules/
+     ── vpc/                 # VPC, subnets, IGW, route table, S3 endpoint
+     ── security_group/      # security group, ingress and egress rules
+     ── iam/                 # IAM role, policy attachment, instance profile
+     ── ec2/                 # key pair and EC2 instances (for_each)
+     ── s3/                  # logs bucket with encryption and lifecycle
+── main.tf                  # root module wiring everything together
+── provider.tf              # AWS provider and S3 backend configuration
 
 ## Prerequisites
 
