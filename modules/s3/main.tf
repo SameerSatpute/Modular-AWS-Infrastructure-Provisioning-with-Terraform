@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "s3_bucket" {
   bucket_namespace = var.bucket_namespace
 
   tags = {
-    Name        = "s3_bucket"
+    Name = "s3_bucket"
   }
 }
 
@@ -18,9 +18,9 @@ resource "aws_s3_bucket_ownership_controls" "acl" {
 resource "aws_s3_bucket_public_access_block" "public_access" {
   bucket = aws_s3_bucket.s3_bucket.id
 
-  block_public_acls       = true
-  block_public_policy     = true
-  ignore_public_acls      = true
+  block_public_acls = true
+  block_public_policy = true
+  ignore_public_acls = true
   restrict_public_buckets = true
 }
 
