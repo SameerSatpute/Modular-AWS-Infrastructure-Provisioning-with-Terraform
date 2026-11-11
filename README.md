@@ -25,6 +25,9 @@ A Terraform project that provisions an AWS environment from reusable modules (VP
 ── main.tf                  # root module wiring everything together
 ── provider.tf              # AWS provider and S3 backend configuration
 
+<img width="776" height="245" alt="image" src="https://github.com/user-attachments/assets/1965d5c4-e57b-4b65-8b49-eacf24b087f2" />
+
+
 ## Prerequisites
 
 - Terraform 1.10 or later (needed for use_lockfile)
