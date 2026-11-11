@@ -69,11 +69,7 @@ This is a learning project, not a production setup.
 
 Never commit these files. Make sure ".gitignore" includes:
 
-.terraform/
-*.tfstate
-*.tfstate.*
-key-ec2
-*.pem
+<img width="205" height="181" alt="image" src="https://github.com/user-attachments/assets/ac9cbf8b-be24-4f69-a1e8-77bebe002c18" />
 
 ## Tech stack
 
