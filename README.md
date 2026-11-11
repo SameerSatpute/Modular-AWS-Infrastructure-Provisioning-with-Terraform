@@ -15,7 +15,7 @@ A Terraform project that provisions an AWS environment from reusable modules (VP
 
 ## Project structure
 
-<img width="387" height="472" alt="image" src="https://github.com/user-attachments/assets/d9864fc4-c9b3-40e5-8b39-02be3d8f2ea3" />
+<img width="420" height="557" alt="image" src="https://github.com/user-attachments/assets/a3fcc015-6938-4612-973f-bdf289d6792b" />
 
 
 ## Prerequisites
